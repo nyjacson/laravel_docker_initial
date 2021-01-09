@@ -13,7 +13,13 @@ http://127.0.0.1:8080/
 docker exec -it web_service bash
 ```
 
-## create laravel project
+## create laravel project with specific version
 ```shell script
-laravel new <Project Name>
+composer create-project "laravel/laravel=6.*" <Project name>
+```
+
+## set symlink
+```shell script
+cd /var/www/html
+ln -s /usr/local/laravel_project/<Project name>/public 
 ```
